@@ -1,0 +1,37 @@
+{
+    "name": "docker-php/behat-docker-extension",
+    "type": "behat-extension",
+    "description": "Test a docker infrastructure with Behat",
+    "license": "MIT",
+    "keywords": ["docker", "behat", "test", "bdd"],
+    "authors": [
+        {
+            "name": "Joel Wurtz",
+            "email": "joel.wurtz@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "docker-php": "^1.21.0",
+        "behat/behat": "~3.0,>=3.0.4"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "DockerPHP\\Behat\\DockerExtension": "src/"
+        }
+    },
+    "scripts": {
+        "test": "",
+        "test-ci": ""
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
